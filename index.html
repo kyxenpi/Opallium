@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opallium — Core</title>
+    <link rel="stylesheet" href="landing.css" />
+  </head>
+  <body>
+    <div class="cursor">
+      <div class="cursor-dot"></div>
+    </div>
+
+    <div class="bg-grid"></div>
+
+    <header class="navbar">
+      <div class="nav-left">
+        <img
+          src="Pictures/logo.png"
+          alt="Opallium Logo"
+          class="nav-logo"
+          onerror="this.style.display = 'none'"
+        />
+        <span class="nav-brand">OPALLIUM</span>
+        <span class="badge-beta">BETA v1.0.0</span>
+      </div>
+      <nav class="nav-right">
+        <a href="#features" class="nav-link">Funcionalidades</a>
+        <a href="#about" class="nav-link">Desenvolvedor</a>
+        <a href="https://opallium.netlify.app/" class="btn-access"
+          >Acessar Workspace ↗</a
+        >
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-text-content">
+          <h1 class="hero-title">
+            Seu workspace.<br />Sua estrutura.
+            <span class="text-gradient">Seu código.</span>
+          </h1>
+          <p class="hero-subtitle">
+            Um ambiente modular, ortogonal e projetado fisicamente com inércia
+            para desenvolvedores que exigem controle absoluto sobre o fluxo de
+            trabalho.
+          </p>
+          <div class="hero-actions">
+            <a href="workspace.html" class="btn-hero-primary"
+              >Inicializar Instância</a
+            >
+            <a href="#features" class="btn-hero-secondary">Explorar Módulos</a>
+          </div>
+        </div>
+
+        <!-- ELEMENTO NOVO: O Visual da Direita -->
+        <div class="hero-visual">
+          <div class="window-preview" id="floatingWindow">
+            <div class="window-header">
+              <div class="dots"><span></span><span></span><span></span></div>
+              <div class="title">opallium_core.sys</div>
+            </div>
+            <div class="window-body">
+              <div class="code-line">
+                <span class="c1">initializing</span>
+                <span class="c2">physics_engine</span>...
+              </div>
+              <div class="code-line">
+                <span class="c1">loading</span>
+                <span class="c2">modules</span> [20/20]
+              </div>
+              <div class="code-line">
+                <span class="c3">>> GRID_SNAP: ENABLED</span>
+              </div>
+              <div class="code-line">
+                <span class="c3">>> LERP_INERTIA: 0.15</span>
+              </div>
+              <div class="code-line blink">_</div>
+            </div>
+          </div>
+          <!-- Elementos decorativos de grade/eixos -->
+          <div class="visual-axis-x"></div>
+          <div class="visual-axis-y"></div>
+        </div>
+      </div>
+    </section>
+    <section id="features" class="section-features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">// ARQUITETURA MODULAR</h2>
+          <p class="section-desc">
+            20 widgets integrados nativamente sob uma fábrica ortogonal isolada.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h3>Produtividade Pura</h3>
+            <p>
+              Notas livres, To-do listas eficientes e gerenciadores de hábitos
+              focados no ambiente de terminal.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⏱️</div>
+            <h3>Motores de Tempo</h3>
+            <p>
+              Cronômetros, temporizadores e ciclos Pomodoro calibrados
+              milissegundo por milissegundo com alta precisão.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💻</div>
+            <h3>Ambiente Dev</h3>
+            <p>
+              Injete estilos em tempo real com a IDE CSS interna. Atalhos de
+              teclado inteligentes, indentação automática e isolamento de
+              escopo.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🐚</div>
+            <h3>Física & Inércia</h3>
+            <p>
+              Arrastes e dimensionamentos calculados por interpolação linear
+              (LERP) com alinhamento magnético em grade matemática.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section-about">
+      <div class="container">
+        <div class="about-box">
+          <div class="about-content">
+            <h2 class="section-title">// QUEM DESENVOLVEU</h2>
+            <p>
+              O <strong>Opallium</strong> foi idealizado e construído sob os
+              pilares da filosofia Unix: responsabilidade única, minimalismo
+              estético e alto desempenho computacional de interface.
+            </p>
+            <div class="developer-profile">
+              <div class="dev-avatar">KL</div>
+              <div class="dev-info">
+                <h4>Kauê Leandro</h4>
+                <p>Core Developer & Python Programmer</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-status">
+            <div class="status-terminal">
+              <div class="term-dot-row">
+                <span></span><span></span><span></span>
+              </div>
+              <p class="term-line">
+                <span class="term-blue">opallium-cli</span> --status
+              </p>
+              <p class="term-gray">> Core: Active</p>
+              <p class="term-gray">> Widgets: 20 Loaded (13 Active / 7 WIP)</p>
+              <p class="term-gray">> Interface: Physics LERP Engine enabled</p>
+              <p class="term-green">> Status: Ready for compilation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        &copy; 2026 KyxenPi. Todos os direitos reservados de
+        codificação.
+      </p>
+      <p class="muted">
+        Aparência customizável via arquivos .css independentes.
+      </p>
+    </footer>
+
+    <script src="landing.js"></script>
+  </body>
+</html>
